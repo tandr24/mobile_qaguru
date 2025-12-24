@@ -1,5 +1,7 @@
 package helpers;
 
+import com.codeborne.selenide.Selenide;
+
 import static io.restassured.RestAssured.given;
 
 public class Browserstack {
@@ -8,7 +10,7 @@ public class Browserstack {
         String url = String.format("https://api.browserstack.com/app-automate/sessions/%s.json", sessionID);
 
         return given()
-                .auth().basic(System.getProperty("username"), System.getProperty("accessKey"))
+                .auth().basic(System.getProperty("userName"), System.getProperty("accessKey"))
                 .get(url)
                 .then()
                 .log().status()

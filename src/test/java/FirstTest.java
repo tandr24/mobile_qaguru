@@ -13,7 +13,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class FirstTestAndroid {
+public class FirstTest {
     @Test
     void successfulSearchTestComplete() throws MalformedURLException, InterruptedException {
 
