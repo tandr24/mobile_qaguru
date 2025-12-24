@@ -22,7 +22,10 @@ public class TestBase {
 
     @BeforeEach
     void beforeEach() {
-        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+        SelenideLogger.addListener("AllureSelenide",
+                new AllureSelenide()
+                        .screenshots(true)
+                        .savePageSource(false));
         open();
     }
 
@@ -30,6 +33,7 @@ public class TestBase {
     void tearDown() {
         String sessionId = Selenide.sessionId().toString();
         System.out.println(sessionId);
+
         Attach.pageSource();
         Attach.screenshotAs("last screen");
         closeWebDriver();
