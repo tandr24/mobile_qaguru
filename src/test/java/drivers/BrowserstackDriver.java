@@ -27,8 +27,8 @@ public class BrowserstackDriver implements WebDriverProvider {
         );
 
         Map<String, Object> bstackOptions = new HashMap<>();
-        bstackOptions.put("userName", "tatianaandreeva_25V8m1");
-        bstackOptions.put("accessKey", "UzbgY9ixkqdnBN8xxQxG");
+        bstackOptions.put("userName", System.getProperty("userName"));
+        bstackOptions.put("accessKey", System.getProperty("accessKey"));
 
         bstackOptions.put("deviceName", config.device());
         bstackOptions.put("osVersion", config.os_version());
