@@ -1,7 +1,5 @@
 package helpers;
 
-import com.codeborne.selenide.Selenide;
-
 import static io.restassured.RestAssured.given;
 
 public class Browserstack {
