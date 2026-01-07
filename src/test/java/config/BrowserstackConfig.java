@@ -3,10 +3,9 @@ package config;
 import org.aeonbits.owner.Config.Sources;
 import org.aeonbits.owner.Config;
 
-@Sources("classpath:${platform}.properties")
-public interface MobileConfig extends Config {
+@Sources("classpath:mobile.properties")
+public interface BrowserstackConfig extends Config {
 
-    @Key("platform")
     @DefaultValue("android")
     String platform();
 

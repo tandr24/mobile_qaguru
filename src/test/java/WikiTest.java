@@ -1,11 +1,14 @@
 import org.junit.jupiter.api.Test;
 import pages.ScreenPagesWiki;
 
+import static com.codeborne.selenide.Selenide.back;
+
 public class WikiTest extends TestBase {
     ScreenPagesWiki page = new ScreenPagesWiki();
 
     @Test
     void searchAppiumPage() {
+        back();
         page.searchPage("Appium")
                 .verifyContentFound();
     }

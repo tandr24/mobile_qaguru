@@ -1,7 +1,7 @@
 package drivers;
 
 import com.codeborne.selenide.WebDriverProvider;
-import config.MobileConfig;
+import config.BrowserstackConfig;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.ios.IOSDriver;
@@ -22,8 +22,8 @@ public class BrowserstackDriver implements WebDriverProvider {
     @Nonnull
     @Override
     public WebDriver createDriver(@Nonnull Capabilities capabilities) {
-        final MobileConfig config = ConfigFactory.create(
-                MobileConfig.class, System.getProperties()
+        final BrowserstackConfig config = ConfigFactory.create(
+                BrowserstackConfig.class, System.getProperties()
         );
 
         Map<String, Object> bstackOptions = new HashMap<>();
