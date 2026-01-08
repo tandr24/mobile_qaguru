@@ -1,8 +1,9 @@
 package config;
 
 import org.aeonbits.owner.Config;
+import org.aeonbits.owner.Config.Sources;
 
-@Config.Sources("classpath:emulator.properties")
+@Sources("classpath:emulator.properties")
 public interface EmulatorConfig extends Config {
 
     @Key("platform.name")
@@ -13,15 +14,7 @@ public interface EmulatorConfig extends Config {
     @DefaultValue("Pixel 7")
     String deviceName();
 
-    @Key("app.package")
-    @DefaultValue("org.wikipedia")
-    String appPackage();
-
-    @Key("app.activity")
-    @DefaultValue("org.wikipedia.main.MainActivity")
-    String appActivity();
-
     @Key("device.avd")
-    @DefaultValue("http://localhost:4723")
+    @DefaultValue("Pixel_7")
     String deviceAvd();
 }
