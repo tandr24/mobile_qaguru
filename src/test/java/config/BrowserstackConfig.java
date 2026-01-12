@@ -3,7 +3,7 @@ package config;
 import org.aeonbits.owner.Config.Sources;
 import org.aeonbits.owner.Config;
 
-@Sources("classpath:mobile.properties")
+@Sources("classpath:properties/bs.properties")
 public interface BrowserstackConfig extends Config {
 
     @DefaultValue("android")
@@ -16,4 +16,10 @@ public interface BrowserstackConfig extends Config {
     @Key("device")
     @DefaultValue("Google Pixel 7 Pro")
     String device();
+
+    @Key("userName")
+    String userName();
+
+    @Key("accessKey")
+    String accessKey();
 }

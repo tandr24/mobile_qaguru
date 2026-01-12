@@ -3,7 +3,7 @@ package config;
 import org.aeonbits.owner.Config;
 import org.aeonbits.owner.Config.Sources;
 
-@Sources("classpath:emulator.properties")
+@Sources("classpath:properties/emulator.properties")
 public interface EmulatorConfig extends Config {
 
     @Key("platform.name")

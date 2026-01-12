@@ -1,12 +1,12 @@
 package test;
 
 import org.junit.jupiter.api.Test;
-import pages.OnboardingPage;
-import pages.SearchPage;
+import screens.OnboardingScreen;
+import screens.SearchScreen;
 
 public class OnboardingTestWiki extends TestBase {
-    public static OnboardingPage page = new OnboardingPage();
-    public static SearchPage searchPage = new SearchPage();
+    public static OnboardingScreen page = new OnboardingScreen();
+    public static SearchScreen searchPage = new SearchScreen();
 
     @Test
     public void onboardingWikiTest() {

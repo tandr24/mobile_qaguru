@@ -31,6 +31,5 @@ dependencies {
 test {
     useJUnitPlatform()
     systemProperties(System.getProperties())
+    workingDir = projectDir
 }
-
-

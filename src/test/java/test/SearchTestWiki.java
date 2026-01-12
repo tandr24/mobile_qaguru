@@ -1,12 +1,12 @@
 package test;
 
 import org.junit.jupiter.api.Test;
-import pages.SearchPage;
+import screens.SearchScreen;
 
 import static com.codeborne.selenide.Selenide.back;
 
 public class SearchTestWiki extends TestBase {
-    SearchPage page = new SearchPage();
+    SearchScreen page = new SearchScreen();
 
     @Test
     void searchAppiumPageTest() {
