@@ -16,7 +16,7 @@ import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 public class TestBase {
-    public static String deviceHost = System.getProperty("deviceHost", "emulation");
+    public static String deviceHost = System.getProperty("deviceHost", "browserstack");
 
     @BeforeAll
     static void beforeAll() {
