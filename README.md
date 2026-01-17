@@ -13,11 +13,11 @@ ____
 
 * <a href="#allure">Allure report</a>
 
-* <a href="#allure-testops">Integration with Allure TestOps</a>
+* <a href="#video">Example videos of test execution on Browserstack</a>
 
-* <a href="#telegram">Telegram notifications via bot</a>
-
-* <a href="#video">Example videos of test execution on Selenoid</a>
+* <a href="#emulator"> Example of execution tests on emulation using Appium Inspector and Appium Server</a>
+  
+* <a href="#video_android">Example videos of test execution on Emulator</a>
 ____
 <a id="tools"></a>
 ## <a name="Technologies and tools">**Technologies and tools:**</a>
@@ -52,7 +52,7 @@ ____
 </p>
 
 
-### **Build parameters in Jenkins:**
+### **Build parameters**
 
 - *deviceHost(browserstack, emulation)
 
@@ -102,4 +102,29 @@ ____
 ____
 <p align="center">
 <img title="Selenoid Video" src="images/video/video.gif" width="550" height="350"  alt="video">   
+</p>
+
+<a id="emulator"></a>
+## *Example of execution tests on emulation using Appium Inspector and Appium Server*
+
+### *Launch local appium server*
+
+<p align="center"> <img title="Appium server" src="images/screen/AppiumServer.jpeg" width="850"> </p>
+
+### *Launch appium inspector*
+
+<p align="center"> <img title="Appium inspector" src="images/screen/AppiumInspector.jpeg" width="850"> </p>
+
+## Commands for running from terminal
+___
+***Local run:***
+```bash  
+gradle clean test -DdeviceHost=emulation
+```
+
+<a id="video_android"></a>
+## Example videos of test execution on Emulator
+____
+<p align="center">
+<img title="Selenoid Video" src="images/video/android_video.gif" width="550" height="350"  alt="video">   
 </p>
