@@ -101,7 +101,7 @@ ____
 ## <img alt="Selenoid" height="25" src="images/logo/Selenoid.svg" width="25"/></a> Example videos of test execution on Browserstack
 ____
 <p align="center">
-<img title="Selenoid Video" src="images/video/video.gif" width="550" height="350"  alt="video">   
+<img title="Selenoid Video" src="images/video/video.gif" width="350" height="750"  alt="video">   
 </p>
 
 <a id="emulator"></a>
@@ -126,5 +126,5 @@ gradle clean test -DdeviceHost=emulation
 ## Example videos of test execution on Emulator
 ____
 <p align="center">
-<img title="Selenoid Video" src="images/video/android_video.gif" width="550" height="350"  alt="video">   
+<img title="Selenoid Video" src="images/video/android_video.gif" width="350" height="750"  alt="video">   
 </p>
